@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" a href="../css files/style.css">
+    <script src="../js/calculator.js"></script>
+
+</head>
+
+<body>
+    <h2>Calculator</h2>
+
+    <div class="calculator">
+        <div class="resultbox">
+
+            <p id="displayResult"></p>
+           <div class="history">
+
+               <p id="history"></p>
+            </div>
+
+        </div>
+
+        <div class="table">
+
+            <table>
+
+                <tr>
+                    <th><button class="button" id="clear" onclick="clearAll()" value=" "
+                            >
+                            C</button></th>
+                    <th><button class="button" id="negative" value="+/-" onclick="operators(this.value)"
+                        >
+                            +/-</button></th>
+                    <th><button class="button" id="percentage" value="%" onclick="operators(this.value)"
+                            >
+                            %</button></th>
+                    <th><button class="operators" id="divide" onclick="operator(this.value)" value="/"
+                            >
+                            &#247</button></th>
+
+                </tr>
+
+                <tr>
+                    <td><button class="button" id="seven" value="7" onclick="getValue(this.value)">7
+                        </button></td>
+                    <td><button class="button" id="eight" value="8" onclick="getValue(this.value)">8
+                        </button></td>
+                    <td><button class="button" id="nine" value="9" onclick="getValue(this.value)">9
+                        </button></td>
+                    <td><button class="operators" id="multiply" value="*" onclick="operator(this.value)"
+                            >&#215
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" id="four" value="4" onclick="getValue(this.value)">4
+                        </button></td>
+                    <td><button class="button" id="five" value="5" onclick="getValue(this.value)">5
+                        </button></td>
+                    <td><button class="button" id="six" value="6" onclick="getValue(this.value)">6
+                        </button></td>
+                    <td><button class="operators" id="minus" value="-" onclick="operator(this.value)"
+                            >-
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" id="one" value="1" onclick="getValue(this.value)">1
+                        </button></td>
+                    <td><button class="button" id="two" value="2" onclick="getValue(this.value)">2
+                        </button></td>
+                    <td><button class="button" id="three" value="3" onclick="getValue(this.value)">3
+                        </button></td>
+                    <td><button class="operators" id="plus" value="+" onclick="operator(this.value)"
+                            >+
+                        </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="zerobutton" id="zero"  value="0" onclick="getValue(this.value)">0
+                        </button></td>
+                    <td><button class="button" id="decimal" value="." onclick="decimal()">.</button></td>
+                    <td> <button class="operators" id="equals" value="=" onclick="solve()"
+                    >
+                            =</button></td>
+                </tr>
+
+        </div>
+
+        </table>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
